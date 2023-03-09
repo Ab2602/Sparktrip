@@ -6,7 +6,7 @@ import {sliderItems} from './CorouselApi';
 function Home() {
     const images =sliderItems.map((url) => (
         
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={900}>
             <img
                 className="d-block w-100"
                 src={url}   
