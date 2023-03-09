@@ -14,20 +14,13 @@ function Home() {
             />
                  
         </Carousel.Item>
-                
-       
       ));
     return(
-
         <div>
-            <Carousel>{images}</Carousel>
+        <Carousel controls={false}>{images}</Carousel>
         </div>
     );
-   
-
-     
-   
-  }
+}
   
   
-  export default Home;
+export default Home;
