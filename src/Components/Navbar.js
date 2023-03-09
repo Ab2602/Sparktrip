@@ -22,7 +22,7 @@ const Navbar = () => {
             <div className='flex justify-between w-full absolute pr-12 pl-6'>
                 <button className='font-semibold border-r pr-4'>Anywhere</button>
                 <button className='font-semibold border-r pr-4'>Any week</button>
-                <button className='text-gray-500'>Add guests</button>
+                <button className='font-semibold border-r pr-4'>Add guests</button>
             </div>
             <div className='bg-[#ff5a60] p-2 rounded-full mr-2 cursor-pointer'>
             <FiSearch  className='text-white cursor-pointer'/>
