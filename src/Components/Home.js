@@ -2,13 +2,16 @@ import * as React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {sliderItems} from './CorouselApi';
+import Navbar from './Navbar';
+import '../index.css'
 
 function Home() {
     const images =sliderItems.map((url) => (
         
         <Carousel.Item interval={900}>
             <img
-                className="d-block w-100"
+                style={{ height: '100vh' }}
+                className=" d-block w-full"
                 src={url}   
                 alt="First slide"
             />
@@ -16,9 +19,12 @@ function Home() {
         </Carousel.Item>
       ));
     return(
-        <div>
-        <Carousel controls={false}>{images}</Carousel>
+        <>
+        <Navbar />
+        <div className='h-3/6'>
+        <Carousel controls={false} >{images}</Carousel>
         </div>
+        </>
     );
 }
   

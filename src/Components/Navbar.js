@@ -1,40 +1,30 @@
 import React from 'react'
-import logo from '../assests/logo.png'
-import { BiGlobe , BiMenu } from 'react-icons/bi';
-import { BsPersonCircle } from 'react-icons/bs';
-import { FiSearch } from 'react-icons/fi';
+// import logo from '../assests/logo.png'
+import image from '../assests/image.png'
 
 const Navbar = () => {
   return (
-    <div className='flex border-b h-20 items-center justify-between'>
+    <div className='flex h-20 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
         {/* Left */}
         <div className='image flex ml-14'>
-            {/* <img src= {logo} alt=""  className= " w-25 h-8"/> */}
             <picture className='flex items-center'>
                 {/* <source media="(min-width: 1000px)" srcset={logo}/> */}
                 {/* <source media="(max-width: 769px)" srcset={logo192} className= "ml-8"/> */}
-                <img src={logo} className='w-25 h-16'/>
+                <img src={image} className='w-47 h-12'alt='Logo'/>
             </picture>
         </div>
         {/* Mid */}
         <div className='hidden md:flex shadow-sm shadow-gray-400 border rounded-full justify-center items-center relative ml-24'>
-            <input type="search" placeholder=''className='py-2 w-[20rem] rounded-full' />
-            <div className='flex justify-between w-full absolute pr-12 pl-6'>
-                <button className='font-semibold border-r pr-4'>Anywhere</button>
-                <button className='font-semibold border-r pr-4'>Any week</button>
-                <button className='font-semibold border-r pr-4'>Add guests</button>
-            </div>
-            <div className='bg-[#ff5a60] p-2 rounded-full mr-2 cursor-pointer'>
-            <FiSearch  className='text-white cursor-pointer'/>
+            <div className='flex  w-max absolute text-white pr-12 pl-6'>
+                <button className='font-semibold  pr-4'>Anywhere</button>
+                <button className='font-semibold  pr-4'>Any week</button>
+                <button className='font-semibold  pr-4'>Add guests</button>
             </div>
         </div>
         {/* Right */}
         <div className='flex items-center mr-14 cursor-pointer'>
-            <p className='font-semibold rounded-full p-1.5 pr-4 pl-4 hover:bg-[#F7F7F7]'>Airbnb your home</p>
-            <BiGlobe className='mx-4 hover:bg-[#F7F7F7] text-2xl p-1 rounded-full'/>
-            <div className='border flex items-center border rounded-full gap-4 p-2 text-2xl hover: shadow-gray-400'>
-                <BiMenu  className=''/>
-                <BsPersonCircle className=''/>
+            <div className='border flex items-center border rounded-full p-2 '>
+                <button className='text-centre w-20 text-white'>Contact</button>
             </div>
         </div>
     </div>
