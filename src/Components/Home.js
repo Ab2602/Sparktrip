@@ -7,7 +7,7 @@ function Home() {
     const images =sliderItems.map((url) => (
         
         <Carousel.Item interval={900}>
-            <img
+            <img style={{height:'100vh'}}
                 className="d-block w-100"
                 src={url}   
                 alt="First slide"
