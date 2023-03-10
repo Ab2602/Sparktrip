@@ -15,10 +15,10 @@ const Navbar = () => {
         </div>
         {/* Mid */}
         <div className='hidden md:flex shadow-sm shadow-gray-400 border rounded-full justify-center items-center relative ml-24'>
-            <div className='flex  w-max absolute text-white pr-12 pl-6'>
-                <button className='font-semibold  pr-4'>Anywhere</button>
-                <button className='font-semibold  pr-4'>Any week</button>
-                <button className='font-semibold  pr-4'>Add guests</button>
+            <div className='flex justify-between w-96 absolute text-white mr-11'>
+                <button className='font-semibold  '>Anywhere</button>
+                <button className='font-semibold  '>Any week</button>
+                <button className='font-semibold  '>Add guests</button>
             </div>
         </div>
         {/* Right */}

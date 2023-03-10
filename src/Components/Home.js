@@ -6,16 +6,16 @@ import Navbar from './Navbar';
 import '../index.css'
 
 function Home() {
+    var a = 900;
     const images =sliderItems.map((url) => (
-        
-        <Carousel.Item interval={900}>
+
+        <Carousel.Item interval={a+100}>
             <img
                 style={{ height: '100vh' }}
                 className=" d-block w-full"
                 src={url}   
                 alt="First slide"
             />
-                 
         </Carousel.Item>
       ));
     return(
