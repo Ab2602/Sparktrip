@@ -1,8 +1,10 @@
 import * as React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+// eslint-disable-next-line
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
+import Home_content from './Home_content';
 
 
 function Home() {
@@ -23,6 +25,7 @@ function Home() {
         <div className='h-3/6'>
         <Carousel controls={false} indicators={false}>{images}</Carousel>
         </div>
+        <Home_content />
         
        </>
     );
