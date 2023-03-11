@@ -4,7 +4,7 @@ import image from '../assests/image.png'
 
 const Navbar = () => {
   return (
-    <div className='flex h-20 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
+    <div className='flex h-18 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
         {/* Left */}
         <div className='image flex ml-14'>
             <picture className='flex items-center'>
