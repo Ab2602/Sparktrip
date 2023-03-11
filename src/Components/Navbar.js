@@ -23,14 +23,8 @@ const Navbar = () => {
         </div>
         {/* Right */}
         <div className='flex items-center mr-14 cursor-pointer'>
-            <div className='flex items-center' >
-                {/* <button className='text-centre w-20 text-white'>Contact</button> */}
-                <a style={{color:'white', textDecoration:'none'}} href="#">
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-	     Contact   </a>
+            <div className='border flex items-center border rounded-full p-2 '>
+                <button className='text-centre w-20 text-white nav-btn'>Contact</button>
             </div>
         </div>
     </div>

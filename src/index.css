@@ -40,18 +40,16 @@ code {
 }
 a{
 	position: relative;
-	padding: 13px 20px;
-  font-weight: bold;
+	padding: 20px 50px;
 	text-decoration: none;
 	color: #fff;
-	font-size: 11px;
+	font-size: 2em;
 	text-transform: uppercase;
-	/* font-family: sans-serif; */
-	letter-spacing: 6px;
+	font-family: sans-serif;
+	letter-spacing: 4px;
 	overflow: hidden;
 	background: rgba(255,255,255,.1);
-	/* box-shadow: 0 5px 5px rgba(0,0,0.2); */
-  border-radius: 50px;
+	box-shadow: 0 5px 5px rgba(0,0,0.2);
 }
 a:before{
 	content: '';
@@ -60,7 +58,7 @@ a:before{
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0);
+	background: rgba(255,255,255,.1);
 }
 a:after{
 	content: '';
@@ -87,7 +85,7 @@ a span:nth-child(1)
 	left: 0;
 	width: 0;
 	height: 1px;
-	background: #ffffff6b;
+	background: #fff;
 }
 a:hover span:nth-child(1)
 {
@@ -100,7 +98,7 @@ a span:nth-child(3)
 	right: 0;
 	width: 0;
 	height: 1px;
-	background: #ffffff7d;
+	background: #fff;
 }
 a:hover span:nth-child(3)
 {
@@ -132,5 +130,36 @@ a:hover span:nth-child(4)
 {
 	height: 100%;
 	transform: translateY(-100%);
+}
+.wrapper {
+  height: 100vh;
+  
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  font-style: italic;
+    font-weight: 200;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2.8s steps(22), blink .7s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
