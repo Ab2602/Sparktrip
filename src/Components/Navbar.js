@@ -4,7 +4,7 @@ import image from '../assests/image.png'
 
 const Navbar = () => {
   return (
-    <div className='flex h-20 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
+    <div className='flex h-18 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
         {/* Left */}
         <div className='image flex ml-14'>
             <picture className='flex items-center'>
@@ -23,10 +23,6 @@ const Navbar = () => {
         </div>
         {/* Right */}
         <div className='flex items-center mr-14 cursor-pointer'>
-<<<<<<< HEAD
-            <div className='border flex items-center border rounded-full p-2 '>
-                <button className='text-centre w-20 text-white nav-btn'>Contact</button>
-=======
             <div className='flex items-center' >
                 {/* <button className='text-centre w-20 text-white'>Contact</button> */}
                 <a style={{color:'white', textDecoration:'none'}} href="#">
@@ -35,7 +31,6 @@ const Navbar = () => {
 		<span></span>
 		<span></span>
 	     Contact   </a>
->>>>>>> c77e1f28edaaeb3f3802f4318783cf7e54f0e7a1
             </div>
         </div>
     </div>

@@ -38,8 +38,6 @@ code {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-<<<<<<< HEAD
-=======
 a{
 	position: relative;
 	padding: 13px 20px;
@@ -135,4 +133,35 @@ a:hover span:nth-child(4)
 	height: 100%;
 	transform: translateY(-100%);
 }
->>>>>>> c77e1f28edaaeb3f3802f4318783cf7e54f0e7a1
+
+.wrapper {
+  height: 100vh;
+  
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  font-style: italic;
+    font-weight: 200;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2.8s steps(22), blink .7s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
