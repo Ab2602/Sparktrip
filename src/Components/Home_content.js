@@ -6,9 +6,7 @@ const Home_content = () => {
     <div className='flex justify-center h-screen w-screen items-center absolute top-0 left-0'>
         <div style={{color:'white'}} className="wrapper w-1/2 m-auto">
             Find your perfect getaway: Search our extensive database of :
-          <span  class="typing-demo">
-            Flights, Hotels, and Activities.
-          </span>
+            <i class="typing-demo">Flights, Hotels, and Activities.</i>
         </div>
 
         <div className='w-1/2'>
