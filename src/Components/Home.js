@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
 
+
 function Home() {
     const images =sliderItems.map((url) => (
 
@@ -22,7 +23,8 @@ function Home() {
         <div className='h-3/6'>
         <Carousel controls={false} indicators={false}>{images}</Carousel>
         </div>
-        </>
+        
+       </>
     );
 }
   
