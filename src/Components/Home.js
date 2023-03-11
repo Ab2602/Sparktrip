@@ -25,7 +25,6 @@ function Home() {
         <div className='h-3/6'>
         <Carousel controls={false} indicators={false} >{images}</Carousel>
         </div>
-        
        </>
     );
 }
