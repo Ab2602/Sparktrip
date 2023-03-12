@@ -4,8 +4,8 @@ import Typewriterco from './Typewriterco'
 const Home_content = () => {
   return (
     <div className='flex justify-center absolute h-screen w-screen items-center top-0 left-0'>
-        <div style={{color:'white'}} className=" w-1/2 m-5 text-5xl leading-relaxed ">
-            <span style={{ display: 'inline' }}>Find your <br /> perfect getaway: <br />
+        <div style={{color:'#ffffffc4'}} className=" w-1/2 m-5 text-5xl leading-relaxed ">
+            <span style={{ display: 'inline',color:'#ffffffc4'}}>Find your <br /> perfect getaway: <br />
               Search our extensive  <br /> database of : </span>
             <Typewriterco  style ={{display: 'inline'}}/>
         </div>
