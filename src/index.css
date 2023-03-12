@@ -40,16 +40,17 @@ code {
 }
 a{
 	position: relative;
-	padding: 20px 50px;
+	padding: 8px 17px;
 	text-decoration: none;
 	color: #fff;
-	font-size: 2em;
+	font-size: 1em;
 	text-transform: uppercase;
-	font-family: sans-serif;
-	letter-spacing: 4px;
+
+	letter-spacing: 2px;
 	overflow: hidden;
 	background: rgba(255,255,255,.1);
-	box-shadow: 0 5px 5px rgba(0,0,0.2);
+  border-radius: 60px;
+	
 }
 a:before{
 	content: '';
@@ -57,7 +58,7 @@ a:before{
 	top: 0;
 	left: 0;
 	width: 50%;
-	height: 100%;
+	height: 0%;
 	background: rgba(255,255,255,.1);
 }
 a:after{
@@ -130,36 +131,4 @@ a:hover span:nth-child(4)
 {
 	height: 100%;
 	transform: translateY(-100%);
-}
-.wrapper {
-  height: 100vh;
-  
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-  font-style: italic;
-    font-weight: 200;
-}
-
-.typing-demo {
-  width: 22ch;
-  animation: typing 2.8s steps(22), blink .7s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
+} 

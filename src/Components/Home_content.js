@@ -1,19 +1,24 @@
 import React from 'react'
 import video from '../assests/video/v1.mp4'
+import { useTypewriter,Cursor } from 'react-simple-typewriter'
 
 const Home_content = () => {
+  const{text}= useTypewriter=({
+    words: ['FLights','Hotels','And','Activities'],
+    loop: {},
+  });
+  
   return (
     <div className='flex justify-center h-screen w-screen items-center absolute top-0 left-0'>
-        <div style={{color:'white'}} className="wrapper w-1/2 m-auto">
-            Find your perfect getaway: Search our extensive database of :
-            <i class="typing-demo">Flights, Hotels, and Activities.</i>
-        </div>
-
-        <div className='w-1/2'>
-            <video src={video} autoplay loop className='bg-transparent rounded-full m-auto'></video>
-        </div>
+     <div style={{marginRight:'65%',marginBottom:'20%' ,color:'white'}} > Find your perfect getaway: Search our extensive database of: </div>
+    <span>{text}</span>
+    <Cursor/>
+   
 
     </div>
+    
+
+    
   )
 }
 
