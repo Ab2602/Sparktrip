@@ -8,6 +8,9 @@ const Home_content = () => {
             <span style={{ display: 'inline' }}>Find your <br /> perfect getaway: <br />
               Search our extensive  <br /> database of : </span>
             <Typewriterco  style ={{display: 'inline'}}/>
+            <br />
+            <button>Learn More</button>
+            <button>Popular Places</button>
         </div>
 
         <div className='w-1/2'>
