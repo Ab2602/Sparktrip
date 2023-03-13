@@ -38,6 +38,9 @@ code {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+/* 
+CSS CONTACT BUTTON */
+
 a{
 	position: relative;
 	padding: 8px 17px;
@@ -52,6 +55,7 @@ a{
   border-radius: 60px;
 	
 }
+
 a:before{
 	content: '';
 	position: absolute;
@@ -137,14 +141,85 @@ a:hover span:nth-child(4)
 	display: inline !important;
 }
 
-.btn{
-	background-color: aqua !important;
-	border-radius: 18px !important;
+.text-type{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.lmfb{
+	background-color: rgba(240, 231, 231, 0.523) ;
+	border-radius: 12px !important;
 	font-size: 16px !important;
     margin: 13px !important;
 	padding: 10px 18px !important;
+	font-style: italic;
+	color: black;
+}
+.lmfb:hover{
+	color: white;
+	background-color: black;
+	border-style:groove;
+	border-width: 1px;
+	background-color: rgba(84, 82, 82, 0.062);
+
+}
+.lmfb:active{
+	background-color: rgba(30, 27, 27, 0.422);
+	
 }
 
-.learn{
-	padding: 11px 25px !important;
+/* CSS MODELS */
+
+.modelbg{
+	position: absolute;
+	top: 80px;
+	height: 535px;
+	background-color: rgba(28, 28, 28, 0.637);
+	
 }
+.modelcontainer{
+background-color: white;
+height: auto;
+width: 40%;
+margin-left: 20%;
+padding-left: 12px;
+border-radius: 30px;
+	
+}
+.modelbganyweek{
+	position: absolute;
+	top: 80px;
+	height: 535px;
+	background-color: rgba(28, 28, 28, 0.637);
+	
+}
+.modelcontaineranyweek{
+background-color: white;
+height: auto;
+width: 40%;
+margin-left: 30%;
+padding-left: 12px;
+border-radius: 30px;
+	
+}
+.modelbgAddGuest{
+	position: absolute;
+	top: 80px;
+	height: 535px;
+	background-color: rgba(28, 28, 28, 0.637);
+	
+}
+.modelcontainerAddGuest{
+background-color: white;
+height: auto;
+width: 40%;
+margin-left: 45%;
+padding-left: 12px;
+border-radius: 30px;
+	
+}
+
+
+
