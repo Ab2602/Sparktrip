@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
 import Home_content from './Home_content';
-
+import Searchbar from './Searchbar';
 
 function Home() {
     const images =sliderItems.map((url) => (
@@ -26,7 +26,7 @@ function Home() {
         <Carousel controls={false} indicators={false}>{images}</Carousel>
         </div>
         <Home_content />
-        
+        <Searchbar />
        </>
     );
 }

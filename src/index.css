@@ -221,5 +221,10 @@ border-radius: 30px;
 	
 }
 
-
+.search_bar{
+	right: 36%;
+	padding:  10px 20px;
+	border-radius: 50px;
+	width: 30%;
+}
 
