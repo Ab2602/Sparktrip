@@ -1,12 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 // import video from '../assests/video/c2.gif'
 import Typewriterco from './Typewriterco'
 
 import '../index.css'
 const Home_content = () => {
-    
-
-
+  
   return (
     
       
@@ -14,7 +12,7 @@ const Home_content = () => {
      
         <div style={{color:'#ffffffc4'}} className="  w-1/2 m-5 text-5xl leading-relaxed ">
        
-            <span className='text-type' style={{ display: 'inline',color:'#ffffffc4',cursor:'context-menu'}}>Find your <br /> perfect getaway: <br />
+            <span className='text-type ' style={{ display: 'inline',color:'#ffffffc4',cursor:'context-menu'}}>Find your <br /> perfect getaway: <br />
               Search our extensive  <br /> database of : </span>
             <Typewriterco  style ={{display: 'inline'}}/>
             <br />
