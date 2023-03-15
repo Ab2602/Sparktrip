@@ -142,19 +142,17 @@ a:hover span:nth-child(4)
 }
 
 .text-type{
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: rgb(255 250 250 / 77%);
 	
 }
 
 .lmfb{
 	background-color: rgba(240, 231, 231, 0.523) ;
 	border-radius: 12px !important;
-	font-size: 16px !important;
+	font-size: 12px !important;
     margin: 13px !important;
 	padding: 10px 18px !important;
-	font-style: italic;
+	
 	color: black;
 }
 .lmfb:hover{
@@ -175,7 +173,7 @@ a:hover span:nth-child(4)
 .modelbg{
 	position: absolute;
 	top: 80px;
-	height: 535px;
+	height: 100vh;
 	background-color: rgba(28, 28, 28, 0.637);
 	
 }
@@ -227,4 +225,6 @@ border-radius: 30px;
 	border-radius: 50px;
 	width: 30%;
 }
+
+
 

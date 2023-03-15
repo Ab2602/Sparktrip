@@ -2,9 +2,13 @@ import Typewriter from 'typewriter-effect';
 import React from 'react'
 import '../index.css'
 
+
 const Typewriterco = () => {
+
+
+
   return (
-    <div style={{ display: 'inline' }}>
+    <div  style={{ display: 'inline' }}>
       <Typewriter
       options={{
         strings: ['Flights...', 'Hotels...', 'Activities...'],

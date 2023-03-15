@@ -7,8 +7,13 @@ import AddGuest from './AddGuest'
 
 const Navbar = () => {
 const [openAnywhere, setOpenAnywhere] = useState(false);
-const[openAnyweek,setOpenAnyweek]=useState(false);
-const[openAddGuest,setOpenAddGuest]=useState(false);
+const[openAnyweek,setOpenAnyweek] = useState(false);
+const[openAddGuest,setOpenAddGuest] = useState(false);
+
+// const mouse=()=>{
+//   onMouseLeave=()=>setOpenAnywhere(false)};
+
+
 
 
 
@@ -25,10 +30,12 @@ const[openAddGuest,setOpenAddGuest]=useState(false);
         {/* Mid */}
         <div className='hidden md:flex shadow-sm shadow-gray-400 border rounded-full justify-center items-center relative ml-24'>
             <div className='flex justify-between w-96 absolute text-white mr-11'>
-            <div className='links'> <button onMouseEnter={() =>setOpenAnywhere(true)} onMouseLeave={()=> setOpenAnywhere(false)} className='font-semibold  '>Anywhere</button> </div>
 
-            <div className='links'>  <button onMouseEnter={()=>setOpenAnyweek(true)} onMouseLeave={()=>setOpenAnyweek(false)} className='font-semibold  '>Any week</button></div>
-            <div className='links'  >  <button onMouseEnter={()=>setOpenAddGuest(true)} onMouseLeave={()=>setOpenAddGuest(false)} className='font-semibold  '>Add guests</button></div>
+            <div className='links'> <button onMouseOver={(condition) =>setOpenAnywhere(condition)}   className='font-semibold  '>Anywhere</button> </div>
+
+            <div className='links'>  <button onMouseOver={()=>setOpenAnyweek(true)}  className='font-semibold    '>Any week</button></div>
+
+            <div className='links'  >  <button onMouseOver={()=>setOpenAddGuest(true)}  className='font-semibold'>Add guests</button></div>
             </div>
         </div>
         {/* Right */}
@@ -42,9 +49,9 @@ const[openAddGuest,setOpenAddGuest]=useState(false);
 	        Contact</a>
             </div>
         </div>
-       {openAnywhere && <Anywhere  />}
-       {openAnyweek && <Anyweek/>}
-      {openAddGuest && < AddGuest/>} 
+       {openAnywhere && <Anywhere handleAnywhere={(revProp)=>setOpenAnywhere(revProp)} />}
+       {openAnyweek &&  <Anyweek handleAnyweek={(revProp)=>setOpenAnyweek(revProp)} />}
+      {openAddGuest && < AddGuest handleAddGuest={(revProp)=>setOpenAddGuest(revProp)} />} 
     </div>
   )
 }
