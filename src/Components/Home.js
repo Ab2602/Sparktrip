@@ -7,6 +7,7 @@ import Navbar from './Navbar';
 import Home_content from './Home_content';
 
 
+
 function Home() {
     const images =sliderItems.map((url) => (
 
@@ -26,6 +27,8 @@ function Home() {
         <Carousel controls={false} indicators={false}>{images}</Carousel>
         </div>
         <Home_content />
+    
+        
         
        </>
     );
