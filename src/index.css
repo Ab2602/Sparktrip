@@ -147,9 +147,10 @@ a:hover span:nth-child(4)
 }
 
 .lmfb{
-	background-color: rgba(240, 231, 231, 0.523) ;
+	background-color: rgba(240, 231, 231, 0.571) ;
 	border-radius: 12px !important;
 	font-size: 12px !important;
+	
     margin: 13px !important;
 	padding: 10px 18px !important;
 	
@@ -164,6 +165,28 @@ a:hover span:nth-child(4)
 
 }
 .lmfb:active{
+	background-color: rgba(30, 27, 27, 0.422);
+	
+}
+.lmfb2{
+	background-color: rgba(24, 23, 23, 0.765) ;
+	border-radius: 12px !important;
+	font-size: 12px !important;
+	
+    margin: 13px !important;
+	padding: 10px 18px !important;
+	
+	color: rgb(228, 222, 222);
+}
+.lmfb2:hover{
+	color: rgb(228, 222, 222);
+	background-color: rgba(24, 23, 23, 0.685);
+	border-style:groove;
+	border-width: 1px;
+	background-color: rgba(84, 82, 82, 0.062);
+
+}
+.lmfb2:active{
 	background-color: rgba(30, 27, 27, 0.422);
 	
 }
@@ -219,7 +242,12 @@ border-radius: 30px;
 	
 }
 
-
+.search_bar{
+	right: 36%;
+	padding:  10px 20px;
+	border-radius: 50px;
+	width: 30%;
+}
 
 
 
