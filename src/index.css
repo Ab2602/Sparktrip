@@ -221,9 +221,12 @@ border-radius: 30px;
 
 .search_bar{
 	right: 36%;
-	padding:  10px 20px;
+	padding:  8px 20px;
 	border-radius: 50px;
-	width: 30%;
+	width: 25%;
+}
+.search_content input:focus{
+		outline: none;
 }
 
 
