@@ -2,6 +2,7 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import "react-datepicker/dist/react-datepicker.css";
+import '../index.css'
 // import { useState, useRef } from "react";
 import '../index.css'
 
@@ -22,7 +23,7 @@ const Searchbar = () => {
         {/* <div className="date_picker">
           <input type="date" onChange={handleChange} ref={dateInputRef} className='mt-1'/>
         </div> */}
-        <BsFillArrowRightCircleFill className="text-3xl"/>
+        <BsFillArrowRightCircleFill className="text-3xl rightbtn"/>
       </div>
     </div>
   );

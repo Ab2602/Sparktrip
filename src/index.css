@@ -252,5 +252,13 @@ border-radius: 30px;
 		outline: none;
 }
 
+.rightbtn:active{
+	background-color: rgba(0, 0, 0, 0.781);
+	border-radius: 120px;
+	color: rgba(255, 255, 255, 0.822);
 
+}
+.rightbtn{
+	cursor: pointer;
+}
 

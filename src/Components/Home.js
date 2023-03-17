@@ -6,7 +6,9 @@ import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
 import Home_content from './Home_content';
 import Searchbar from './Searchbar';
-import Cards from './HomeCard/Cards'
+import Cards from './HomeCard/Cards';
+import {list} from './HomeCard/Card-List'
+
 
 
 function Home() {
@@ -30,21 +32,13 @@ function Home() {
         <Home_content />
         <Searchbar />
         <div className='card-flex'>
-       <Cards/>
-       <Cards/> 
-       <Cards/> 
-       <Cards/> 
-       <Cards/> <Cards/> <Cards/> <Cards/> <Cards/> <Cards/> 
+        {list.map((Cards,i)=>{
+           <Cards Cards={Cards}  key={i}   />
+         })} 
+        
        
-       
-       
-       
-         </div>
-      
-
-     
-      
-       </>
+        </div>
+        </>
     );
 }
   
