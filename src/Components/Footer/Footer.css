@@ -1,0 +1,35 @@
+.footerContainer{
+    height: auto;
+    width: 100vw;
+    background-color: rgba(24, 23, 23, 0.765);
+    display: flex;
+    flex-direction: row;
+}
+
+.countrydata{
+    color: rgb(255, 255, 255);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    cursor: default;
+   
+    width: 75%;
+    
+}
+.logo{
+    margin-left: 2%;
+    width: 27vw;
+   
+   
+
+}
+.footerBottom{
+    background-color: white ; 
+    color: white;
+    text-align: center;
+}
+
+   
+    
+    
+    
+    

@@ -18,7 +18,7 @@ const Searchbar = () => {
       <div className="m-auto flex justify-between content-center">
         <div className="search_content">
           <FiSearch className="inline mb-1.5 text-2xl" />
-          <input type="search" placeholder="Search your fav places" className="ml-3 text-xl "/>
+          <input type="search" placeholder="Search your fav places" className="ml-3 text-1.2rem "/>
         </div>
         {/* <div className="date_picker">
           <input type="date" onChange={handleChange} ref={dateInputRef} className='mt-1'/>

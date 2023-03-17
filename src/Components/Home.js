@@ -7,7 +7,8 @@ import Navbar from './Navbar';
 import Home_content from './Home_content';
 import Searchbar from './Searchbar';
 import Cards from './HomeCard/Cards';
-import {list} from './HomeCard/Card-List'
+import Footer from './Footer/Footer';
+// import {list} from './HomeCard/Card-List'
 
 
 
@@ -31,13 +32,23 @@ function Home() {
         </div>
         <Home_content />
         <Searchbar />
-        <div className='card-flex'>
-        {list.map((Cards,i)=>{
-           <Cards Cards={Cards}  key={i}   />
-         })} 
-        
-       
+        <div className='card-flex'>  
+        {/* {list.map((card)=>(
+            <Cards Cards={card} i={i}/>
+        ))} */}
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
+        <Cards/>
         </div>
+        <Footer/>
         </>
     );
 }

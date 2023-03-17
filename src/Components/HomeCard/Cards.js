@@ -9,10 +9,10 @@ import { Pagination, Navigation } from "swiper";
 
 
 
-function Cards({Cards}) {
+function Cards() {
   return (
     <div className='card-box'>
-      <Swiper
+      {/* <Swiper
         slidesPerView={1}
         spaceBetween={15}
         loop={true}
@@ -27,18 +27,20 @@ function Cards({Cards}) {
             <img src={src} className="card-img" style={{borderRadius:'1rem'}} />
           </SwiperSlide>
         ))}
-      </Swiper>
-      <div className='card-info'> 
-      <h4>{Cards.title}</h4>
+        
+      </Swiper> */}
+      <img src='https://pix10.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768' className="card-img" style={{borderRadius:'1rem'}} /> 
+      <div className='card-info'>
+      <h4>Jaipur</h4>
       
       <div className='card-rating' >
       <StarRateIcon style={{fontSize:'20px',marginBottom:'10.5px'}}  /> 
-      <p style={{marginTop:'7px'}} >{Cards.rating}</p> 
+      <p style={{marginTop:'7px'}} >4.88</p> 
       </div>
       </div>
        {/* <div className='placeinfo' ><h6>Pricing</h6></div> */}
-       <p style={{marginTop:'0px',marginBottom:'1rem'}}>Beach and Sea Views</p>
-       <p style={{marginTop:'0px',fontWeight:'600'}} >{Cards.price}</p>
+      
+       <p style={{marginTop:'0px',fontWeight:'600'}} >₹8000/Night</p>
       </div>
   )
 }
