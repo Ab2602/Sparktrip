@@ -31,3 +31,14 @@
   display: flex;
 
 }
+.swiper-container {
+  height: 270px;
+  width: 270px;
+  overflow: hidden;
+}
+.card-img {
+  height: 270px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}

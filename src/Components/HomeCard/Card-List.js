@@ -79,7 +79,7 @@
       desc: "Beach and Sunset Views",
       imgSrc: [
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lpibo-ew-1656015868.jpg",
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU",
+        "https://encrypted-tbn0.gstat ic.com/images?q=tbn:ANd9GcTqg5siFywtSULLeH0eaN3k6cBQy_HSnJpJGQ&usqp=CAU",
       ],
       price: "45000",
       date: "10-20 Oct",

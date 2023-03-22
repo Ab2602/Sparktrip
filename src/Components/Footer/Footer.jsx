@@ -9,7 +9,7 @@ function Footer() {
         
             <div className='countrydata' >
                
-               
+            <h7 className='cpr' >©All Rights Reserve Sparktrip.com</h7>
         
             </div>
             <div className='logo'>
@@ -17,11 +17,11 @@ function Footer() {
             </div>
 
 
-       
+            
        
        
     </div>
-    <div className='footerBottom' > <h7>©All Rights Reserve Sparktrip.com</h7> </div>
+    {/* <div className='footerBottom' > </div> */}
     </>
   )
 }

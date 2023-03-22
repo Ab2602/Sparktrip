@@ -8,7 +8,7 @@
 
 .countrydata{
     color: rgb(255, 255, 255);
-    margin-left: 1rem;
+    margin-left: 0rem;
     margin-top: 0.5rem;
     cursor: default;
    
@@ -16,7 +16,7 @@
     
 }
 .logo{
-    margin-left: 2%;
+    margin-left: 0%;
     width: 27vw;
    
    
@@ -28,6 +28,19 @@
     color: white;
     text-align: center;
 }
+.cpr{
+    
+    display: block;
+    background-color: #211d34;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    top: 100%;
+    
+    
+
+};
+
 
    
     
