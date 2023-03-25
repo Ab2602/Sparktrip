@@ -1,11 +1,13 @@
 import * as React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-// eslint-disable-next-line
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
 import Home_content from './Home_content';
 import Searchbar from './Searchbar';
+import Cards from '../HomeCard/Cards';
+import Footer from '../Footer/Footer';
+import {list} from '../HomeCard/Card-List'
 
 function Home() {
     const images =sliderItems.map((url) => (
@@ -27,6 +29,12 @@ function Home() {
         </div>
         <Home_content />
         <Searchbar />
+        <div className='card-flex'>  
+        {list.map((card,i)=>(
+            <Cards key={`card-${i}`} card={card} /> // card-0 card-1
+        ))}
+        </div>
+        <Footer />
        </>
     );
 }
