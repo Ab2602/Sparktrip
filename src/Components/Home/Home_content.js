@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 // import video from '../assests/video/c2.gif'
 import Typewriterco from './Typewriterco'
 
-import '../index.css'
+import '../../index.css'
 const Home_content = () => {
   
   return (

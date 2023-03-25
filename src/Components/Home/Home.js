@@ -6,9 +6,9 @@ import {sliderItems} from './CorouselApi';
 import Navbar from './Navbar';
 import Home_content from './Home_content';
 import Searchbar from './Searchbar';
-import Cards from './HomeCard/test';
-import Footer from './Footer/Footer';
-import {list} from './HomeCard/Card-List';
+import Cards from '../HomeCard/test';
+import Footer from '../Footer/Footer';
+import {list} from '../HomeCard/Card-List';
 
 
 

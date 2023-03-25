@@ -1,9 +1,9 @@
 import React,{useState} from 'react'
 // import logo from '../assests/logo.png'
-import image from '../assests/image.png'
-import Anywhere from './Anywhere'
-import Anyweek from './Anyweek'
-import AddGuest from './AddGuest'
+import image from '../../assests/image.png'
+import Anywhere from '../Model/Anywhere'
+import Anyweek from '../Model/Anyweek'
+import AddGuest from '../Model/AddGuest'
 
 const Navbar = () => {
 const [openAnywhere, setOpenAnywhere] = useState(false);
@@ -18,7 +18,7 @@ const[openAddGuest,setOpenAddGuest] = useState(false);
 
 
   return (
-    <div className='flex h-20 items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
+    <div className='flex h-20 w-full items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-lg backdrop-filter bg-opacity-75'>
         {/* Left */}
         <div className='image flex ml-14'>
             <picture className='flex items-center'>

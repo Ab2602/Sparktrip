@@ -2,9 +2,9 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import "react-datepicker/dist/react-datepicker.css";
-import '../index.css'
+import '../../index.css'
 // import { useState, useRef } from "react";
-import '../index.css'
+
 
 const Searchbar = () => {
   // const [date, setDate] = useState("");
