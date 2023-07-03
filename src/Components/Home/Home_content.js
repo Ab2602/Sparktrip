@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 // import video from '../assests/video/c2.gif'
 import Typewriterco from './Typewriterco'
+import '../../index.css'
 
 import '../../index.css'
 const Home_content = () => {
@@ -17,7 +18,7 @@ const Home_content = () => {
             <Typewriterco  style ={{display: 'inline'}}/>
             <br />
             <button className='lmfb'>Learn More</button>
-            <button className='lmfb2'>Find Best Stays</button>
+            <button className='lmfb'>Find Best Stays</button>
         </div>
 
         <div className='w-1/2'>

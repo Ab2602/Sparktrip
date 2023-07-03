@@ -15,5 +15,3 @@ return (
 }
 
 export default Anyweek
-
-

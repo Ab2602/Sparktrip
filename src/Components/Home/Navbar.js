@@ -31,7 +31,7 @@ const[openAddGuest,setOpenAddGuest] = useState(false);
         <div className='hidden md:flex shadow-sm shadow-gray-400 border rounded-full justify-center items-center relative ml-24'>
             <div className='flex justify-between w-96 absolute text-white mr-11'>
 
-            <div className='links'> <button onMouseOver={(condition) =>setOpenAnywhere(condition)}   className='font-semibold  '>Anywhere</button> </div>
+            <div className='links'> <button onMouseOver={() =>setOpenAnywhere(true)}   className='font-semibold  '>Anywhere</button> </div>
 
             <div className='links'>  <button onMouseOver={()=>setOpenAnyweek(true)}  className='font-semibold    '>Any week</button></div>
 
