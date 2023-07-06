@@ -13,17 +13,20 @@ import {list} from '../HomeCard/Card-List';
 
 function Home() {
 const [userInput, setuserInput] = useState("");
+const [userList, setUserList] = useState(list);
 const addHotel=(e)=>{
     setuserInput(e.target.value);
+    const filterData=list.filter((hotel)=>{
+        if (userInput ==='') {
+            return hotel;
+        }
+        else if (hotel.state?.toLowerCase()?.includes(userInput?.toLowerCase())){
+            return hotel;
+        }
+    })
+    setUserList(filterData)
 }
-const filterData=list.filter((hotel)=>{
-    if (userInput ==='') {
-        return hotel;
-    }
-    else{
-        return hotel.state
-    }
-})
+
  const images =sliderItems.map((url) => (
 
         <Carousel.Item interval={3000} wrap>
@@ -48,7 +51,7 @@ const filterData=list.filter((hotel)=>{
          />
         <div className='card-flex'>  
 
-        {filterData.map((card,i)=>(
+        {userList.map((card,i)=>(
             <Cards key={`card-${i}`} id={card.desc} card={card} /> // card-0 card-1
         ))}
         </div>
