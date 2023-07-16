@@ -9,55 +9,32 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import { Pagination, Navigation, Virtual } from "swiper";
 import '../HomeCard/Card.css'
+import { Lazy } from 'react';
 
 
 
-function Cards({card = {}}) {
+function Cards(props) {
 
-// useEffect(()=>{
-//   axios.get('https://jsonplaceholder.typicode.com/todos/1')
-//   .then((resp)=>{console.log(resp)})
-// },[])
-
-  const {rating,desc,price,title} = card
+  // useEffect(()=>{
+  //   axios.get('https://jsonplaceholder.typicode.com/todos/1')
+  //   .then((resp)=>{console.log(resp)})
+  // },[
   return (
     <div className='card-box'>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={50}
-        loop={true}
-        mousewheel={true}
-        cssMode={true}
-        pagination
-        // modules={[Pagination, Navigation]}
-        className="swiper-container"
-       
-        
-      >
-        {card.imgSrc.map((src,i) => (
-          <SwiperSlide key={`img-${i}`} >
-            <img src={src} className="card-img" style={{borderRadius:'1rem'}} />
-          </SwiperSlide>
-        ))}
-        
-      </Swiper>
-{/* <img src={imgSrc[0]} className="card-img" style={{borderRadius:'1rem'}} />  */}
-
-
-  
-
+        <img  src={props.card.cardPhotos[0].urltemplate} className="card-img" style={{ borderRadius: '1rem' }} /> 
+      {/* <img src={imgSrc[0]} className="card-img" style={{borderRadius:'1rem'}} />  */}
       <div className='card-info'>
-      <h4>{title}</h4>
-      
-      <div className='card-rating' >
-      <StarRateIcon style={{fontSize:'20px',marginBottom:'10.5px'}}  /> 
-      <p style={{marginTop:'7px'}} >{rating}</p> 
+      <h6>{props.card.title}</h6>
+
+        <div className='card-rating' >
+          <StarRateIcon style={{ fontSize: '20px', marginBottom: '10.5px' }} />
+          <p style={{ marginTop: '7px' }} >{props.card.bubbleRating.rating}</p>
+        </div>
       </div>
-      </div>
-       {/* <div className='placeinfo' ><h6>Pricing</h6></div> */}
-      
-       <p style={{marginTop:'0px',fontWeight:'600'}} >{price}</p>
-      </div>
+      {/* <div className='placeinfo' ><h6>Pricing</h6></div> */}
+
+      <p style={{ marginTop: '0px', fontWeight: '600' }} >{props.card.bubbleRating.count}</p>
+    </div>
   )
 }
 
