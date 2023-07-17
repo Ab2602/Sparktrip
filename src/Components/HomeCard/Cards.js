@@ -20,7 +20,7 @@ var width=400;
           <p style={{ marginTop: '7px' }} >{props.card.bubbleRating.rating}</p>
         </div>
       </div>
-      <p style={{ marginTop: '0px', fontWeight: '600' }} >₹{props.card.bubbleRating.count}</p>
+      <p style={{ marginTop: '0px', fontWeight: '600' }} >{props.card.priceForDisplay}</p>
     </div>
   )
 }

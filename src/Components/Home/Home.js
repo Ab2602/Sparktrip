@@ -10,11 +10,13 @@ import Searchbar from "./Searchbar";
 import Cards from "../HomeCard/Cards.js";
 import Footer from "../Footer/Footer";
 import { useEffect } from "react";
+import SkeletonCard from "./SkeletonCard";
 
 function Home() {
-  const [cityName, setCityName] = useState("Goa");
+  const [cityName, setCityName] = useState("Jaipur");
   const [hotelData, setHotelData] = useState([]);
   const [locationId, setlocationId] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     searchApi();
   }, []); //useEffect og getting geoId
@@ -40,7 +42,7 @@ function Home() {
         query: { locationID },
       },
       headers: {
-        "X-RapidAPI-Key": "3cf2abd49fmshf5f66b40730f54fp1c15bcjsn255695cbedd0",
+        "X-RapidAPI-Key": "395c3db00bmsh3211664a9204c48p1214aajsn49a6528827a6",
         "X-RapidAPI-Host": "tripadvisor16.p.rapidapi.com",
       },
     };
@@ -65,7 +67,7 @@ function Home() {
         currencyCode: "INR",
       },
       headers: {
-        "X-RapidAPI-Key": "3cf2abd49fmshf5f66b40730f54fp1c15bcjsn255695cbedd0",
+        "X-RapidAPI-Key": "395c3db00bmsh3211664a9204c48p1214aajsn49a6528827a6",
         "X-RapidAPI-Host": "tripadvisor16.p.rapidapi.com",
       },
     };
@@ -74,6 +76,7 @@ function Home() {
       const response = await axios.request(options);
       const allData = response.data.data.data;
       setHotelData(allData);
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
@@ -98,14 +101,19 @@ function Home() {
       </div>
       <Home_content />
       <Searchbar
-        // userData={userInput}
         searchCity={getCityName}
       />
       <div className="card-flex">
-        {hotelData.map((el, id) => (
-          <Cards key={`card-${id}`} id={id} card={el} /> // card-0 card-1
-        ))}
-      </div>
+      {isLoading ? (
+        Array.from({ length: 20 }).map((_, index) => (
+          <SkeletonCard key={`skeleton-card-${index}`} />
+        ))
+      ) : (
+        hotelData.map((el, id) => (
+          <Cards key={`card-${id}`} id={id} card={el} />
+        ))
+      )}
+    </div>
       <Footer />
     </>
   );

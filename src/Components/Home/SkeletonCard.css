@@ -1,0 +1,35 @@
+.skeleton-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    width: 280px; 
+  height: 400px;
+  }
+  
+  .skeleton-thumbnail {
+    width: 120px;
+    height: 90px;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .skeleton-details {
+    flex-grow: 1;
+  }
+  
+  .skeleton-title {
+    width: 80%;
+    height: 16px;
+    background-color: #dcdcdc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skeleton-description {
+    width: 90%;
+    height: 12px;
+    background-color: #dcdcdc;
+  }
+  
