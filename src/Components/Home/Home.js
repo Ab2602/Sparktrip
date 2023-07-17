@@ -22,40 +22,37 @@ function Home() {
     if (locationId) {
       getHotelData();
     }
-  }, [locationId]);  //of getting hotel data
+  }, [locationId]); //of getting hotel data
 
-
-  const getCityName=(e)=>{
-    // console.log(e.target.value)
+  const getCityName = (e) => {
     setCityName(e.target.value);
-    console.log(e.target.name)
+    console.log(e.target.name);
+  };
 
-  }
- 
-  async function searchApi(){
-    const city=cityName;
-    const state=null;
-    const locationID=`${city},India`
-      const options = {
-        method: 'GET',
-        url: 'https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchLocation',
-        params: {
-        query: {locationID}
-        },
-        headers: {
-          'X-RapidAPI-Key': '3cf2abd49fmshf5f66b40730f54fp1c15bcjsn255695cbedd0',
-          'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
-        }
-      };
-      try {
-        const response = await axios.request(options);
-        const geoId=response.data.data[0].geoId;
-        setlocationId(geoId);
-      } catch (error) {
-        console.error(error);
-      }
+  async function searchApi() {
+    const city = cityName;
+    const state = null;
+    const locationID = `${city},India`;
+    const options = {
+      method: "GET",
+      url: "https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchLocation",
+      params: {
+        query: { locationID },
+      },
+      headers: {
+        "X-RapidAPI-Key": "3cf2abd49fmshf5f66b40730f54fp1c15bcjsn255695cbedd0",
+        "X-RapidAPI-Host": "tripadvisor16.p.rapidapi.com",
+      },
+    };
+    try {
+      const response = await axios.request(options);
+      const geoId = response.data.data[0].geoId;
+      setlocationId(geoId);
+    } catch (error) {
+      console.error(error);
     }
-    //of getting hotelData
+  }
+  //of getting hotelData
   async function getHotelData() {
     const options = {
       method: "GET",
@@ -75,11 +72,11 @@ function Home() {
     console.log(locationId);
     try {
       const response = await axios.request(options);
-      const allData=response.data.data.data;
+      const allData = response.data.data.data;
       setHotelData(allData);
     } catch (error) {
       console.error(error);
-    } 
+    }
   }
   const images = sliderItems.map((url) => (
     <Carousel.Item interval={3000} wrap>
@@ -91,7 +88,7 @@ function Home() {
       />
     </Carousel.Item>
   ));
-return (
+  return (
     <>
       <Navbar />
       <div className="h-3/6">
@@ -102,13 +99,12 @@ return (
       <Home_content />
       <Searchbar
         // userData={userInput}
-         searchCity={getCityName}
+        searchCity={getCityName}
       />
       <div className="card-flex">
         {hotelData.map((el, id) => (
           <Cards key={`card-${id}`} id={id} card={el} /> // card-0 card-1
         ))}
-        
       </div>
       <Footer />
     </>

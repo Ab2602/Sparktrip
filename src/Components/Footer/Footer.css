@@ -1,4 +1,4 @@
-.footerContainer{
+/* .footerContainer{
     height: auto;
     width: 100%;
     background-color: rgba(24, 23, 23, 0.765);
@@ -11,34 +11,28 @@
     margin-left: 0rem;
     margin-top: 0.5rem;
     cursor: default;
-   
     width: 75%;
-    
 }
+
 .logo{
     margin-left: 0%;
     width: 27vw;
-   
-   
-
 }
+
 .footerBottom{
     background-color: #132b36fc;
     color: white; ; 
     color: white;
     text-align: center;
 }
+
 .cpr{
-    
     display: block;
     background-color: #211d34;
     margin-left: 0px;
     width: 100%;
     text-align: center;
     margin-top: 7rem;
-    
-    
-
 };
 
 
@@ -46,4 +40,47 @@
     
     
     
+     */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer .footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
     
+  }
+  
+  .footer .footer-icons a {
+    margin: 0 5px;
+    color: white;
+    /* border-radius: 50%; */
+    transition: background-color 0.3s;
+    width: 50px;
+  }
+  
+  .footer .footer-icons a:hover {
+    background-color: white;
+    color: black;
+  }
+  

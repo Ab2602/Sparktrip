@@ -1,39 +1,44 @@
-import React from 'react';
-import '../Footer/Footer.css';
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
-
+import React from "react";
+import "./Footer.css";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
   return (
-    <>
-   
-    <div className='footerContainer' >
-   
-        
-            <div className='countrydata' >
-            <div><MDBBtn  style={{ backgroundColor: '#0082ca' }} href='https://www.linkedin.com/in/devansh-sharma-4a4a07210/'>
-        <MDBIcon fab icon='linkedin-in' />
-         </MDBBtn>
-         <MDBBtn className='m-1' style={{ backgroundColor: '#333333' }} href='#'>
-        <MDBIcon fab icon='github' />
-      </MDBBtn> </div>
-          
-               
-            <h7 className='cpr' >©All Rights Reserve Sparktrip.com</h7>
-        
-            </div>
-            <div className='logo'>
-                <img src="https://d1epq84pwgteub.cloudfront.net/files/0/sites/3/2017/10/top-5star-hotels.jpg" alt="" />
-            </div>
+    <footer className="footer">
+      <div className="footer-left">
+        <h4>Abhinav Tripathi</h4>
+        <div className="footer-icons">
+          <a href="https://github.com/Ab2602" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/abhinav-tripathi-aab6a91b1/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://instagram.com/abhinavtripathi02?igshid=MzNlNGNkZWQ4Mg==" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+      <div className="footer-center">
+        <p>All rights reserved</p>
+      </div>
+      <div className="footer-right">
+        <h4>Devansh Sharma</h4>
+        <div className="footer-icons">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+    </footer>
 
-
-            
-       
-       
-    </div>
-    {/* <div className='footerBottom' > </div> */}
-    </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
