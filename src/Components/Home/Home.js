@@ -31,9 +31,7 @@ function Home() {
     console.log(e.target.name)
 
   }
-  // console.log(cityName)
-  // console.log(cityName); 
-  //for getting geoId
+ 
   async function searchApi(){
     const city=cityName;
     const state=null;
@@ -110,6 +108,7 @@ return (
         {hotelData.map((el, id) => (
           <Cards key={`card-${id}`} id={id} card={el} /> // card-0 card-1
         ))}
+        
       </div>
       <Footer />
     </>

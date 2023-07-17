@@ -3,15 +3,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap ;
-  padding: 1rem 1.7rem;
+  padding: 1.2rem .2rem;
   gap: 1rem;
 
 }
 .card-img{
-  height: 250px;
-  width: 250px;
   border-radius: 4rem;
-  object-fit: cover ;
+  /* object-fit: cover ; */
+  margin: auto;
+  width:321px !important;
+  height:300px !important;
   
  
 }
@@ -41,5 +42,12 @@
   width: 270px;
   object-fit: cover;
   border-radius: 0.5rem;
+}
+.card-box{
+  /* border: 2px solid black; */
+  width:280px;
+  height:400px;
+  
+  
 }
  
